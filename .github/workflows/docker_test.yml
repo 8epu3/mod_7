@@ -28,5 +28,4 @@ jobs:
 
       - name: Verify container health
         run: |
-          # Example: check logs or run a command inside container
           docker logs qr-generator
