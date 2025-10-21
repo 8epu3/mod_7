@@ -30,9 +30,3 @@ jobs:
         run: |
           # Example: check logs or run a command inside container
           docker logs qr-generator
-
-      - name: Cleanup
-        run: |
-        docker stop qr-generator || true
-        docker rm -f qr-generator || true
-
