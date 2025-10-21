@@ -32,5 +32,7 @@ jobs:
           docker logs qr-generator
 
       - name: Cleanup
-        run: docker rm -f qr-generator || true
+        run: |
+        docker stop qr-generator
+        docker rm -f qr-generator || true
 
