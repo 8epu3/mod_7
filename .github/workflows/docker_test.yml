@@ -33,6 +33,6 @@ jobs:
 
       - name: Cleanup
         run: |
-        docker stop qr-generator
+        docker stop qr-generator || true
         docker rm -f qr-generator || true
 
